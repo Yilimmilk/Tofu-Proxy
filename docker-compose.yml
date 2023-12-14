@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tofu-proxy:
+    build: .
+    ports:
+      - "38725:9000"
+    volumes:
+      - /etc/timezone:/etc/timezone:ro  # 同步时区（只读）
+      - /etc/localtime:/etc/localtime:ro  # 同步时间（只读）

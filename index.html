@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapoTofu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            font-size: clamp(3.5rem, 2.455rem + 5.23vw, 6.375rem);
+            margin-bottom: 10%;
+            background: linear-gradient(to bottom, #222222 70%, #5fcdee 30%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .link {
+            display: block;
+            font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
+            background: linear-gradient(to right, purple, pink);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #333333;
+                --text-color: #f2f2f2;
+            }
+
+            .title {
+                background: linear-gradient(to bottom, #f2f2f2 70%, #8a2be2 30%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            .link {
+                background: linear-gradient(to right, pink, purple);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">MapoTofu</div>
+        <a href="https://api.mapotofu.one/" class="link">https://api.mapotofu.one/</a>
+    </div>
+</body>
+
+</html>
